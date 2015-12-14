@@ -1,19 +1,506 @@
-@import "lib/_reset.scss"; 
-@import "lib/_mixin.scss"; 
+@import "lib/_reset.scss";
+@import "lib/_mixin.scss";
 @import "lib/_colors_variables.scss";
-
 @import "_general.scss";
-
 $wc: 960;
 $fz: 16;
+html {
+    font-size: $fz * 1px;
+}
 
+body {
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 1rem;
+    background: #fff;
+    position: relative;
+    padding-top: 90 / $fz * 1rem;
+    color: #9c9c9c;
+}
 
+.container {
+    max-width: $wc * 1px;
+    // display: flex;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    text-align: center;
+}
 
+h1 {
+    display: inline-block;
+    font-size: 42 / $fz * 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50 / $fz * 1rem;
+}
 
+p {
+    line-height: 26 / $fz * 1rem;
+    color: #666;
+}
 
+a {
+    color: #5490ff;
+    display: inline-block;
+    text-decoration: none;
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
 
- 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
- 
+.rectangle-7, .scroll-down, .logo, .scroll-down1, .scroll-down2, .scroll-down3, .google-plus, .google-plus1, .pinterest, .pinterest1, .twitter, .twitter1, .facebook, .facebook1 {
+    display: block;
+    background: url('../img/pnp.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
 
+.rectangle-7 {
+    background-position: -2px -0px;
+    width: 234px;
+    height: 11px;
+    margin: 0 auto;
+    margin-bottom: 20 / $fz * 1rem;
+}
 
+.scroll-down {
+    background-position: -2px -13px;
+    width: 125px;
+    height: 125px;
+}
+
+.logo {
+    background-position: -2px -140px;
+    width: 121px;
+    height: 40px;
+}
+
+.scroll-down1 {
+    background-position: -129px -13px;
+    width: 80px;
+    height: 80px;
+}
+
+.scroll-down2 {
+    background-position: -129px -95px;
+    width: 80px;
+    height: 80px;
+}
+
+.scroll-down3 {
+    background-position: -125px -177px;
+    width: 80px;
+    height: 80px;
+}
+
+.google-plus {
+    background-position: -2px -182px;
+    width: 50px;
+    height: 43px;
+}
+
+.google-plus1 {
+    background-position: -54px -182px;
+    width: 50px;
+    height: 43px;
+}
+
+.pinterest {
+    background-position: -2px -227px;
+    width: 49px;
+    height: 49px;
+}
+
+.pinterest1 {
+    background-position: -53px -227px;
+    width: 49px;
+    height: 49px;
+}
+
+.twitter {
+    background-position: -104px -259px;
+    width: 49px;
+    height: 41px;
+}
+
+.twitter1 {
+    background-position: -155px -259px;
+    width: 49px;
+    height: 41px;
+}
+
+.facebook {
+    background-position: -211px -13px;
+    width: 23px;
+    height: 49px;
+}
+
+.facebook1 {
+    background-position: -211px -64px;
+    width: 23px;
+    height: 49px;
+}
+
+%scroll {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+nav {
+    background: #2b323a;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 2px 5px rgba(#000, .3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    .container {
+        align-items: stretch;
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            align-items: stretch;
+            li {
+                display: flex;
+                align-items: stretch;
+                &:after {
+                    content: "|";
+                    color: #fff;
+                    line-height: 90 / $fz * 1rem;
+                }
+                &:last-child:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    a {
+        color: #fff;
+        font-family: 'PT Sans', sans-serif;
+        display: block;
+        padding: 0 30 / $fz * 1rem;
+        line-height: 90 / $fz * 1rem;
+    }
+}
+
+.profile {
+    // height: 830 / $fz * 1rem;
+    background: #20272f url('../img/pexels-photo.png') 50% 50% no-repeat;
+    background-size: cover;
+    padding-top: 430 / $fz * 1rem;
+    padding-bottom: 115 / $fz * 1rem;
+    .container {
+        display: block;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.profile-line {
+    width: 300 / $fz * 1rem;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 30 / $fz * 1rem;
+    margin-bottom: 35 / $fz * 1rem;
+}
+
+h4 {
+    font-size: 23 / $fz * 1rem;
+    line-height: 42 / $fz * 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(#000, .4);
+    margin-bottom: 110 / $fz * 1rem;
+    background: rgba(#111, .3);
+    padding: 1.5rem;
+    display: block;
+}
+
+.scroll-down {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.profile-social {
+    // display: flex;
+    align-items: stretch;
+    background: #2b323a;
+    height: 150 / $fz * 1rem;
+    .container {
+        align-items: stretch;
+        display: flex;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            align-items: stretch;
+            flex-wrap: wrap;
+            li {
+                display: flex;
+                // align-items: stretch;
+                align-items: center;
+                // flex-basis: 50 / $fz * 1rem;
+                padding: 0 50 / $fz * 1rem;
+            }
+        }
+    }
+}
+
+%section {
+    padding-top: 90 / $fz * 1rem;
+    padding-bottom: 50 / $fz * 1rem;
+}
+
+%section-h1 {
+    line-height: 65 / $fz * 1rem;
+    color: #ed5565;
+    position: relative;
+    margin-bottom: 30 / $fz * 1rem;
+    border-bottom: 1px solid #dbdbdb;
+    font-weight: 300;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        left: 40 / 130 * 100%;
+        right: 40 / 130 * 100%;
+        bottom: -1px;
+        background: #ed5565;
+    }
+}
+
+.resume {
+    @extend %section;
+    background: #fff url('../img/circle1.png') 50% 50% no-repeat;
+    background-size: cover;
+    .container {
+        display: block;
+        >p {
+            margin-bottom: 40 / $fz * 1rem;
+        }
+    }
+    h1 {
+        @extend %section-h1;
+    }
+}
+
+.resume-time {
+    height: 610 / $fz * 1rem;
+    overflow: auto;
+    border: 1px;
+    margin-bottom: 50 / $fz * 1rem;
+}
+
+.resume-time-btn {
+    line-height: 60 / $fz * 1rem;
+    width: 165 / $fz * 1rem;
+    background: #ed5565;
+    display: block;
+    color: #fff;
+    font-size: 21 / $fz * 1rem;
+    margin: 0 auto;
+    margin-bottom: 30 / $fz * 1rem;
+    border-radius: 5 / $fz * 1rem;
+    font-weight: 300;
+    &:hover {
+        text-decoration: none;
+        background: darken(#ed5565, 15%);
+    }
+}
+
+.resume-time-section {
+    h2 {
+        margin-bottom: 20 / $fz * 1rem;
+        color: #ed5565;
+        font-size: 18 / $fz * 1rem;
+        font-weight: 300;
+    }
+    h3 {
+        margin-bottom: 20 / $fz * 1rem;
+        // font-weight: 300;
+        font-size: 21 / $fz * 1rem;
+        color: #666;
+    }
+    a {
+        margin-bottom: 25 / $fz * 1rem;
+    }
+    p {
+        margin-bottom: 40 / $fz * 1rem;
+    }
+}
+
+.line-red {
+    background: #ed5565;
+    width: 73 / $fz * 1rem;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 40 / $fz * 1rem;
+}
+
+.scroll-down1 {
+    @extend %scroll;
+    // margin-bottom: 50 / $fz * 1rem;
+}
+
+.work {
+    @extend %section;
+    background: #434a54 url('../img/circle.png') 50% 50% no-repeat;
+    background-size: cover;
+    h1 {
+        @extend %section-h1;
+        color: #fff;
+        border-bottom-color: #757a81;
+        &:after {
+            background: #fff;
+        }
+    }
+    p {
+        color: #e1e5eb;
+        margin-bottom: 30 / $fz * 1rem;
+    }
+}
+
+.line-gray {
+    width: 190 / $fz * 1rem;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 30 / $fz * 1rem;
+    background: #757a81;
+}
+
+.work-nav {
+    margin-bottom: 40 / $fz * 1rem;
+    display: flex;
+    justify-content: center;
+    ul {
+        display: flex;
+        li {
+            &::after {
+                content: "/"
+            }
+            &:last-child::after {
+                content: ""
+            }
+        }
+    }
+    a {
+        padding: 0 20 / $fz * 1rem;
+        color: #fff;
+    }
+}
+
+.work-foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30 / $fz * 1rem;
+    div {
+        margin-bottom: 30 / $fz * 1rem;
+        position: relative;
+        cursor: pointer;
+        p {
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: transparent;
+            font-weight: 300;
+            transition: background .25s;
+            transition: color .25s;
+        }
+        &:hover {
+            p {
+                background: rgba(#ed5565, .7);
+                color: #fff;
+                text-shadow: 0 0 1px #ed5565;
+            }
+        }
+    }
+}
+
+.scroll-down2 {
+    @extend %scroll;
+}
+
+.contact {
+    @extend %section;
+    background: #fff url('../img/circle1.png') 50% 50% no-repeat;
+    background-size: cover;
+    h1 {
+        @extend %section-h1;
+    }
+    p {
+        margin-bottom: 30 / $fz * 1rem;
+    }
+    label {
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+        font-size: 14 / $fz * 1rem;
+        width: 560 / 960 * 100%
+    }
+    input, textarea {
+        width: 100%;
+        margin: 20 / $fz * 1rem 0;
+        border: 2px solid #f1f1f1
+    }
+    input {
+        height: 55 / $fz * 1rem;
+        font-size: 1rem;
+    }
+    button {
+        height: 50 / $fz * 1rem;
+        width: 170 / $fz * 1rem;
+        background: #434a54;
+        border-radius: 5 / $fz * 1rem;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background: darken(#434a54, 15%);
+        }
+    }
+}
+
+.line-gray-2 {
+    margin: 0 auto;
+    height: 1px;
+    width: 195 / $fz * 1rem;
+    background: #dbdbdb;
+    margin-bottom: 30 / $fz * 1rem;
+}
+
+.contact-footer {
+    background: #434a54;
+    padding-top: 50 / $fz * 1rem;
+    padding-bottom: 25 / $fz * 1rem;
+}
+
+.contact-footer-social {
+    @extend .profile-social;
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 30  / $fz * 1rem;
+}
+
+.scroll-down3{
+   @extend %scroll;
+
+}

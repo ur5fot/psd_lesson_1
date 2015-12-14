@@ -46,3 +46,501 @@ table {
 * {
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1rem;
+  background: #fff;
+  position: relative;
+  padding-top: 5.625rem;
+  color: #9c9c9c;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 2.625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+p {
+  line-height: 1.625rem;
+  color: #666;
+}
+
+a {
+  color: #5490ff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.rectangle-7, .scroll-down, .logo, .scroll-down1, .scroll-down2, .scroll-down3, .google-plus, .google-plus1, .pinterest, .pinterest1, .twitter, .twitter1, .facebook, .facebook1 {
+  display: block;
+  background: url("../img/pnp.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.rectangle-7 {
+  background-position: -2px 0px;
+  width: 234px;
+  height: 11px;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.scroll-down {
+  background-position: -2px -13px;
+  width: 125px;
+  height: 125px;
+}
+
+.logo {
+  background-position: -2px -140px;
+  width: 121px;
+  height: 40px;
+}
+
+.scroll-down1 {
+  background-position: -129px -13px;
+  width: 80px;
+  height: 80px;
+}
+
+.scroll-down2 {
+  background-position: -129px -95px;
+  width: 80px;
+  height: 80px;
+}
+
+.scroll-down3 {
+  background-position: -125px -177px;
+  width: 80px;
+  height: 80px;
+}
+
+.google-plus {
+  background-position: -2px -182px;
+  width: 50px;
+  height: 43px;
+}
+
+.google-plus1 {
+  background-position: -54px -182px;
+  width: 50px;
+  height: 43px;
+}
+
+.pinterest {
+  background-position: -2px -227px;
+  width: 49px;
+  height: 49px;
+}
+
+.pinterest1 {
+  background-position: -53px -227px;
+  width: 49px;
+  height: 49px;
+}
+
+.twitter {
+  background-position: -104px -259px;
+  width: 49px;
+  height: 41px;
+}
+
+.twitter1 {
+  background-position: -155px -259px;
+  width: 49px;
+  height: 41px;
+}
+
+.facebook {
+  background-position: -211px -13px;
+  width: 23px;
+  height: 49px;
+}
+
+.facebook1 {
+  background-position: -211px -64px;
+  width: 23px;
+  height: 49px;
+}
+
+.scroll-down1, .scroll-down2, .scroll-down3 {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+nav {
+  background: #2b323a;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+nav .container {
+  align-items: stretch;
+  display: flex;
+}
+
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+nav .container ul li {
+  display: flex;
+  align-items: stretch;
+}
+
+nav .container ul li:after {
+  content: "|";
+  color: #fff;
+  line-height: 5.625rem;
+}
+
+nav .container ul li:last-child:after {
+  content: "";
+}
+
+nav a {
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  display: block;
+  padding: 0 1.875rem;
+  line-height: 5.625rem;
+}
+
+.profile {
+  background: #20272f url("../img/pexels-photo.png") 50% 50% no-repeat;
+  background-size: cover;
+  padding-top: 26.875rem;
+  padding-bottom: 7.1875rem;
+}
+
+.profile .container {
+  display: block;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.profile-line {
+  width: 18.75rem;
+  height: 1px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  margin-bottom: 2.1875rem;
+}
+
+h4 {
+  font-size: 1.4375rem;
+  line-height: 2.625rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6.875rem;
+  background: rgba(17, 17, 17, 0.3);
+  padding: 1.5rem;
+  display: block;
+}
+
+.scroll-down {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.profile-social, .contact-footer-social {
+  align-items: stretch;
+  background: #2b323a;
+  height: 9.375rem;
+}
+
+.profile-social .container, .contact-footer-social .container {
+  align-items: stretch;
+  display: flex;
+}
+
+.profile-social .container ul, .contact-footer-social .container ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.profile-social .container ul li, .contact-footer-social .container ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+
+.resume, .work, .contact {
+  padding-top: 5.625rem;
+  padding-bottom: 3.125rem;
+}
+
+.resume h1, .work h1, .contact h1 {
+  line-height: 4.0625rem;
+  color: #ed5565;
+  position: relative;
+  margin-bottom: 1.875rem;
+  border-bottom: 1px solid #dbdbdb;
+  font-weight: 300;
+}
+
+.resume h1:after, .work h1:after, .contact h1:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 30.76923%;
+  right: 30.76923%;
+  bottom: -1px;
+  background: #ed5565;
+}
+
+.resume {
+  background: #fff url("../img/circle1.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.resume .container {
+  display: block;
+}
+
+.resume .container > p {
+  margin-bottom: 2.5rem;
+}
+
+.resume-time {
+  height: 38.125rem;
+  overflow: auto;
+  border: 1px;
+  margin-bottom: 3.125rem;
+}
+
+.resume-time-btn {
+  line-height: 3.75rem;
+  width: 10.3125rem;
+  background: #ed5565;
+  display: block;
+  color: #fff;
+  font-size: 1.3125rem;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+  border-radius: 0.3125rem;
+  font-weight: 300;
+}
+
+.resume-time-btn:hover {
+  text-decoration: none;
+  background: #de182c;
+}
+
+.resume-time-section h2 {
+  margin-bottom: 1.25rem;
+  color: #ed5565;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.resume-time-section h3 {
+  margin-bottom: 1.25rem;
+  font-size: 1.3125rem;
+  color: #666;
+}
+
+.resume-time-section a {
+  margin-bottom: 1.5625rem;
+}
+
+.resume-time-section p {
+  margin-bottom: 2.5rem;
+}
+
+.line-red {
+  background: #ed5565;
+  width: 4.5625rem;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.work {
+  background: #434a54 url("../img/circle.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.work h1 {
+  color: #fff;
+  border-bottom-color: #757a81;
+}
+
+.work h1:after {
+  background: #fff;
+}
+
+.work p {
+  color: #e1e5eb;
+  margin-bottom: 1.875rem;
+}
+
+.line-gray {
+  width: 11.875rem;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+  background: #757a81;
+}
+
+.work-nav {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.work-nav ul {
+  display: flex;
+}
+
+.work-nav ul li::after {
+  content: "/";
+}
+
+.work-nav ul li:last-child::after {
+  content: "";
+}
+
+.work-nav a {
+  padding: 0 1.25rem;
+  color: #fff;
+}
+
+.work-foto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+
+.work-foto div {
+  margin-bottom: 1.875rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.work-foto div p {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  font-weight: 300;
+  transition: background 0.25s;
+  transition: color 0.25s;
+}
+
+.work-foto div:hover p {
+  background: rgba(237, 85, 101, 0.7);
+  color: #fff;
+  text-shadow: 0 0 1px #ed5565;
+}
+
+.contact {
+  background: #fff url("../img/circle1.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.contact p {
+  margin-bottom: 1.875rem;
+}
+
+.contact label {
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  width: 58.33333%;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  margin: 1.25rem 0;
+  border: 2px solid #f1f1f1;
+}
+
+.contact input {
+  height: 3.4375rem;
+  font-size: 1rem;
+}
+
+.contact button {
+  height: 3.125rem;
+  width: 10.625rem;
+  background: #434a54;
+  border-radius: 0.3125rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #212529;
+}
+
+.line-gray-2 {
+  margin: 0 auto;
+  height: 1px;
+  width: 12.1875rem;
+  background: #dbdbdb;
+  margin-bottom: 1.875rem;
+}
+
+.contact-footer {
+  background: #434a54;
+  padding-top: 3.125rem;
+  padding-bottom: 1.5625rem;
+}
+
+.contact-footer-social {
+  background-color: transparent;
+  height: auto;
+  margin-bottom: 1.875rem;
+}
