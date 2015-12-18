@@ -44,9 +44,14 @@ a {
     color: #5490ff;
     display: inline-block;
     text-decoration: none;
-    &:hover, &:focus {
+    &:hover {
         text-decoration: underline;
     }
+}
+a[name]{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
 }
 
 img {
@@ -199,8 +204,8 @@ nav {
     // height: 830 / $fz * 1rem;
     background: #20272f url('../img/pexels-photo.png') 50% 50% no-repeat;
     background-size: cover;
-    padding-top: 430 / $fz * 1rem;
-    padding-bottom: 115 / $fz * 1rem;
+    padding-top: 100 / $fz * 1rem;
+    padding-bottom: 100 / $fz * 1rem;
     .container {
         display: block;
     }
@@ -226,8 +231,8 @@ h4 {
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(#000, .4);
-    margin-bottom: 110 / $fz * 1rem;
-    background: rgba(#111, .3);
+    margin-bottom: 80 / $fz * 1rem;
+    background: rgba(#111, .5);
     padding: 1.5rem;
     display: block;
 }
@@ -238,7 +243,7 @@ h4 {
 }
 
 .profile-social {
-    // display: flex;
+    display: flex;
     align-items: stretch;
     background: #2b323a;
     height: 150 / $fz * 1rem;
@@ -408,7 +413,7 @@ h4 {
 .work-foto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30 / $fz * 1rem;
     div {
         margin-bottom: 30 / $fz * 1rem;
@@ -454,12 +459,13 @@ h4 {
         display: block;
         margin: 0 auto;
         font-size: 14 / $fz * 1rem;
+        color: darken(#666, 10%);
         width: 560 / 960 * 100%
     }
     input, textarea {
         width: 100%;
         margin: 20 / $fz * 1rem 0;
-        border: 2px solid #f1f1f1
+        border: 2px solid darken(#f1f1f1, 10%)
     }
     input {
         height: 55 / $fz * 1rem;
@@ -503,4 +509,8 @@ h4 {
 .scroll-down3{
    @extend %scroll;
 
+}
+
+.nav-active{
+    text-decoration: underline;
 }

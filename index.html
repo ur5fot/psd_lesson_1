@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Название сайта</title>
+    <title>portfolio photographer</title>
     <!-- стили плагинов -->
     <!-- build:css css/vendor.min.css -->
     <!-- endbuild -->
@@ -24,14 +24,15 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#profile" >Profile</a></li>
+                <li><a href="#resume" >Resume</a></li>
+                <li><a href="#work" >Work</a></li>
+                <li><a href="#contact" >Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="profile">
+    <a name = 'profile'></a>
+    <div class="profile" id="profile">
         <div class="container">
             <figure class='logo'></figure>
             <div class="profile-line"></div>
@@ -57,7 +58,8 @@
             </ul>
         </div>
     </div>
-    <div class="resume">
+    <a name = 'resume'></a>
+    <div class="resume"  id="resume">
         <div class="container">
             <h1>resume</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore facere, cum vel harum iusto eum, facilis inventore itaque iure magni incidunt natus voluptatum atque dignissimos, nulla sunt nisi! Voluptate, eum.</p>
@@ -107,7 +109,8 @@
             <div class="scroll-down1"></div>
         </div>
     </div>
-    <div class="work">
+    <a name = 'work'></a>
+    <div class="work"  id="work">
         <div class="container">
             <h1>work</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat alias?</p>
@@ -149,7 +152,8 @@
             <div class="scroll-down2"></div>
         </div>
     </div>
-    <div class="contact">
+    <a name = 'contact'></a>
+    <div class="contact" id="contact">
         <div class="container">
             <h1>contact</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat alias?</p>
@@ -195,7 +199,17 @@
     <!-- endbuild -->
     <!-- build:js js/main.min.js -->
     <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
     <!-- endbuild -->
+    <script>
+        scroll({
+            nav : 'nav a',
+            animateDuration : 1000
+        });
+
+
+    </script>
+
 </body>
 
 </html>
