@@ -8,7 +8,8 @@
     <!-- стили плагинов -->
     <!-- build:css css/vendor.min.css -->
     <!-- endbuild -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,100italic,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,100italic,100'
+          rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <!-- мои стили -->
     <!-- build:css css/style.min.css -->
@@ -16,199 +17,228 @@
     <!-- endbuild -->
     <!--скрипт для старых браузеров IE-->
     <!--[if lt IE 9]>
-         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
- <![endif]-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <nav>
-        <div class="container">
+<nav>
+    <div class="container">
+        <ul>
+        <!-- href="#profile"  profile - до кокого класса будет склолиться -->
+            <li><a href="#profile">Profile</a></li> 
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <svg height="32px" class="hamburger-icon" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+
+    </div>
+</nav>
+<!-- <a name='profile'></a> -->
+<!--  name='profile' для поисковых ботов или когда js отулючен-->
+<div class="profile" name='profile' >
+    <div class="container">
+        <figure class='logo'></figure>
+        <div class="profile-line"></div>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit natus dolore ipsum, eos culpa sapiente
+            repellendus nihil soluta fuga ut rem aperiam atque quod facere, animi id, laudantium distinctio
+            aliquid.</h4>
+        <div class="scroll-down"></div>
+    </div>
+</div>
+<div class="profile-social">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#" class="twitter"></a>
+            </li>
+            <li>
+                <a href="#" class="facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="google-plus"></a>
+            </li>
+            <li>
+                <a href="#" class="pinterest"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <a name='resume'></a> -->
+<div class="resume"  name='resume'>
+    <div class="container">
+        <h1>resume</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore facere, cum vel harum iusto eum, facilis
+            inventore itaque iure magni incidunt natus voluptatum atque dignissimos, nulla sunt nisi! Voluptate,
+            eum.</p>
+        <div class="resume-time">
+            <div class="resume-time-section">
+                <a href="#" class="resume-time-btn">Employment</a>
+                <h2>2012 - Presenet</h2>
+                <div class="rectangle-7"></div>
+                <h3>Director Photography</h3>
+                <a href="#">www.google.com</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti
+                    distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus
+                    magni quibusdam asperiores quidem itaque.</p>
+                <div class="line-red"></div>
+            </div>
+            <div class="resume-time-section">
+                <h2>2010 - 2012</h2>
+                <div class="rectangle-7"></div>
+                <h3>Director Photography</h3>
+                <a href="#">www.google.com</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti
+                    distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus
+                    magni quibusdam asperiores quidem itaque.</p>
+                <div class="line-red"></div>
+            </div>
+            <div class="resume-time-section">
+                <h2>2008 - 2010</h2>
+                <div class="rectangle-7"></div>
+                <h3>Director Photography</h3>
+                <a href="#">www.google.com</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti
+                    distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus
+                    magni quibusdam asperiores quidem itaque.</p>
+                <div class="line-red"></div>
+            </div>
+            <div class="resume-time-section">
+                <h2>2007 - 2008</h2>
+                <div class="rectangle-7"></div>
+                <h3>Director Photography</h3>
+                <a href="#">www.google.com</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti
+                    distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus
+                    magni quibusdam asperiores quidem itaque.</p>
+                <div class="line-red"></div>
+            </div>
+            <div class="resume-time-section">
+                <h2>2006 - 2007</h2>
+                <div class="rectangle-7"></div>
+                <h3>Director Photography</h3>
+                <a href="#">www.google.com</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti
+                    distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus
+                    magni quibusdam asperiores quidem itaque.</p>
+                <div class="line-red"></div>
+            </div>
+        </div>
+        <div class="scroll-down1"></div>
+    </div>
+</div>
+<!-- <a name='work'></a> -->
+<div class="work" name='work'>
+    <div class="container">
+        <h1>work</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis
+            molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat
+            alias?</p>
+        <div class="line-gray"></div>
+        <div class="work-nav">
             <ul>
-                <li><a href="#profile" >Profile</a></li>
-                <li><a href="#resume" >Resume</a></li>
-                <li><a href="#work" >Work</a></li>
-                <li><a href="#contact" >Contact</a></li>
+                <li><a href="#">Digital</a></li>
+                <li><a href="#">Landscapes</a></li>
+                <li><a href="#">Natural</a></li>
+                <li><a href="#">Photography</a></li>
             </ul>
         </div>
-    </nav>
-    <a name = 'profile'></a>
-    <div class="profile" id="profile">
-        <div class="container">
-            <figure class='logo'></figure>
-            <div class="profile-line"></div>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit natus dolore ipsum, eos culpa sapiente repellendus nihil soluta fuga ut rem aperiam atque quod facere, animi id, laudantium distinctio aliquid.</h4>
-            <div class="scroll-down"></div>
+        <div class="work-foto">
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Reiciendis officia perspiciatis accusamus magni.</p>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Quasi saepe porro officia ad?</p>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Consectetur molestiae, aut ex possimus?</p>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Ut modi porro, cupiditate facere?</p>
+            </div>
+            <div>
+                <img src="http://lorempixel.com/300/250" alt="">
+                <p>Natus porro eius voluptate, blanditiis?</p>
+            </div>
         </div>
+        <div class="scroll-down2"></div>
     </div>
-    <div class="profile-social">
+</div>
+<!-- <a name='contact'></a> -->
+<div class="contact" name='contact'>
+    <div class="container">
+        <h1>contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis
+            molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat
+            alias?</p>
+        <div class="line-gray-2"></div>
+        <form action="#">
+            <label>Yuor Name
+                <input type="text">
+            </label>
+            <label>Yuor Email
+                <input type="email">
+            </label>
+            <label>Yuor Messange
+                <textarea rows="5"></textarea>
+            </label>
+            <button>Send Messange</button>
+        </form>
+    </div>
+</div>
+<div class="contact-footer">
+    <div class="contact-footer-social">
         <div class="container">
             <ul>
                 <li>
-                    <a href="#" class="twitter"></a>
+                    <a href="#" class="twitter1"></a>
                 </li>
                 <li>
-                    <a href="#" class="facebook"></a>
+                    <a href="#" class="facebook1"></a>
                 </li>
                 <li>
-                    <a href="#" class="google-plus"></a>
+                    <a href="#" class="google-plus1"></a>
                 </li>
                 <li>
-                    <a href="#" class="pinterest"></a>
+                    <a href="#" class="pinterest1"></a>
                 </li>
             </ul>
         </div>
     </div>
-    <a name = 'resume'></a>
-    <div class="resume"  id="resume">
-        <div class="container">
-            <h1>resume</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore facere, cum vel harum iusto eum, facilis inventore itaque iure magni incidunt natus voluptatum atque dignissimos, nulla sunt nisi! Voluptate, eum.</p>
-            <div class="resume-time">
-                <div class="resume-time-section">
-                    <a href="#" class="resume-time-btn">Employment</a>
-                    <h2>2012 - Presenet</h2>
-                    <div class="rectangle-7"></div>
-                    <h3>Director Photography</h3>
-                    <a href="#">www.google.com</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus magni quibusdam asperiores quidem itaque.</p>
-                    <div class="line-red"></div>
-                </div>
-                <div class="resume-time-section">
-                    <h2>2010 - 2012</h2>
-                    <div class="rectangle-7"></div>
-                    <h3>Director Photography</h3>
-                    <a href="#">www.google.com</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus magni quibusdam asperiores quidem itaque.</p>
-                    <div class="line-red"></div>
-                </div>
-                <div class="resume-time-section">
-                    <h2>2008 - 2010</h2>
-                    <div class="rectangle-7"></div>
-                    <h3>Director Photography</h3>
-                    <a href="#">www.google.com</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus magni quibusdam asperiores quidem itaque.</p>
-                    <div class="line-red"></div>
-                </div>
-                <div class="resume-time-section">
-                    <h2>2007 - 2008</h2>
-                    <div class="rectangle-7"></div>
-                    <h3>Director Photography</h3>
-                    <a href="#">www.google.com</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus magni quibusdam asperiores quidem itaque.</p>
-                    <div class="line-red"></div>
-                </div>
-                <div class="resume-time-section">
-                    <h2>2006 - 2007</h2>
-                    <div class="rectangle-7"></div>
-                    <h3>Director Photography</h3>
-                    <a href="#">www.google.com</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ipsa neque optio placeat deleniti distinctio harum libero consequuntur. Dolores ex, dolor perspiciatis? Blanditiis voluptates possimus magni quibusdam asperiores quidem itaque.</p>
-                    <div class="line-red"></div>
-                </div>
-            </div>
-            <div class="scroll-down1"></div>
-        </div>
-    </div>
-    <a name = 'work'></a>
-    <div class="work"  id="work">
-        <div class="container">
-            <h1>work</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat alias?</p>
-            <div class="line-gray"></div>
-            <div class="work-nav">
-                <ul>
-                    <li><a href="#">Digital</a></li>
-                    <li><a href="#">Landscapes</a></li>
-                    <li><a href="#">Natural</a></li>
-                    <li><a href="#">Photography</a></li>
-                </ul>
-            </div>
-            <div class="work-foto">
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Reiciendis officia perspiciatis accusamus magni.</p>
-                </div>
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Quasi saepe porro officia ad?</p>
-                </div>
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Consectetur molestiae, aut ex possimus?</p>
-                </div>
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Ut modi porro, cupiditate facere?</p>
-                </div>
-                <div>
-                    <img src="http://lorempixel.com/300/250" alt="">
-                    <p>Natus porro eius voluptate, blanditiis?</p>
-                </div>
-            </div>
-            <div class="scroll-down2"></div>
-        </div>
-    </div>
-    <a name = 'contact'></a>
-    <div class="contact" id="contact">
-        <div class="container">
-            <h1>contact</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel id quos nam omnis illum saepe corporis molestiae perspiciatis repellat libero iure ducimus accusamus sunt cum neque debitis, error placeat alias?</p>
-            <div class="line-gray-2"></div>
-            <form action="#">
-                <label>Yuor Name
-                    <input type="text">
-                </label>
-                <label>Yuor Email
-                    <input type="email">
-                </label>
-                <label>Yuor Messange
-                    <textarea rows="5"></textarea>
-                </label>
-                <button>Send Messange</button>
-            </form>
-        </div>
-    </div>
-    <div class="contact-footer">
-        <div class="contact-footer-social">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#" class="twitter1"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="facebook1"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="google-plus1"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="pinterest1"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="scroll-down3"></div>
-    </div>
-    <!-- build:js js/vendor.min.js -->
-    <script src="libs/prefixfree/prefixfree.min.js"></script>
-    <script src="libs/remFollbek/rem.min.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/main.min.js -->
-    <script src="js/main.js"></script>
-    <script src="js/animate.js"></script>
-    <!-- endbuild -->
-    <script>
-        scroll({
-            nav : 'nav a',
-            animateDuration : 1000
-        });
+    <div class="scroll-down3"></div>
+</div>
+<!-- build:js js/vendor.min.js -->
+<script src="libs/prefixfree/prefixfree.min.js"></script>
+<script src="libs/remFollbek/rem.min.js"></script>
+<!-- endbuild -->
+<!-- build:js js/main.min.js -->
+<script src="js/main.js"></script>
+<script src="js/animate.js"></script>
+<!-- endbuild -->
+<script>
+    scrollLanding({
+        nav: 'nav a', //пункт меню
+        animateDuration: 1500, // время анимации
+        funtiming: function back(timeFraction) { //
+            return Math.pow(timeFraction, 2) * ((1.3 + 1) * timeFraction - 1.3)
+        },
+        activeClass: 'nav-active', // класс который добавляется если доскролить до пунта меню
+        activeLeft: 1, // координата left, пределения пункта меню 
+        activeTop: 100 // координата Right, пределения пункта меню
+
+    });
 
 
-    </script>
+</script>
 
 </body>
 

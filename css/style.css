@@ -57,7 +57,6 @@ body {
   font-size: 1rem;
   background: #fff;
   position: relative;
-  padding-top: 5.625rem;
   color: #9c9c9c;
 }
 
@@ -66,6 +65,7 @@ body {
   margin: 0 auto;
   padding: 0 0.5rem;
   text-align: center;
+  background: transparent;
 }
 
 h1 {
@@ -100,7 +100,6 @@ a[name] {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -198,6 +197,14 @@ img {
   height: 49px;
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .scroll-down1, .scroll-down2, .scroll-down3 {
   margin: 0 auto;
   cursor: pointer;
@@ -205,7 +212,6 @@ img {
 
 nav {
   background: #2b323a;
-  display: flex;
   align-items: stretch;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -213,11 +219,11 @@ nav {
   right: 0;
   top: 0;
   z-index: 1;
+  text-align: center;
 }
 
 nav .container {
   align-items: stretch;
-  display: flex;
 }
 
 nav .container ul {
@@ -250,10 +256,18 @@ nav a {
   line-height: 5.625rem;
 }
 
+.hamburger-icon {
+  fill: #fff;
+  cursor: pointer;
+  display: block;
+  display: none;
+  margin: .3rem;
+}
+
 .profile {
   background: #20272f url("../img/pexels-photo.png") 50% 50% no-repeat;
   background-size: cover;
-  padding-top: 6.25rem;
+  padding-top: 12.5rem;
   padding-bottom: 6.25rem;
 }
 
@@ -293,10 +307,7 @@ h4 {
 }
 
 .profile-social, .contact-footer-social {
-  display: flex;
-  align-items: stretch;
   background: #2b323a;
-  height: 9.375rem;
 }
 
 .profile-social .container, .contact-footer-social .container {
@@ -306,16 +317,15 @@ h4 {
 
 .profile-social .container ul, .contact-footer-social .container ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-grow: 1;
   align-items: stretch;
-  flex-wrap: wrap;
 }
 
 .profile-social .container ul li, .contact-footer-social .container ul li {
+  height: 9.375rem;
   display: flex;
   align-items: center;
-  padding: 0 3.125rem;
 }
 
 .resume, .work, .contact {
@@ -423,7 +433,7 @@ h4 {
   background: #fff;
 }
 
-.work p {
+.work .container > p {
   color: #e1e5eb;
   margin-bottom: 1.875rem;
 }
@@ -467,9 +477,15 @@ h4 {
 }
 
 .work-foto div {
-  margin-bottom: 1.875rem;
+  margin: 1%;
   position: relative;
   cursor: pointer;
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+.work-foto div img {
+  width: 100%;
 }
 
 .work-foto div p {
@@ -477,17 +493,23 @@ h4 {
   display: block;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0rem;
+  top: 90%;
   color: transparent;
   font-weight: 300;
   transition: background 0.25s;
   transition: color 0.25s;
+  transition: 0.1s top 0.3s;
+  z-index: 1;
 }
 
 .work-foto div:hover p {
-  background: rgba(237, 85, 101, 0.7);
+  background: rgba(237, 85, 101, 0.9);
   color: #fff;
   text-shadow: 0 0 1px #ed5565;
+  bottom: auto;
+  top: 101%;
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.5);
 }
 
 .contact {
